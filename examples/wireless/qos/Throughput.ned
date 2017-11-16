@@ -22,6 +22,7 @@ import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
 import inet.node.inet.WirelessHost;
 import inet.node.wireless.AccessPoint;
 import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
+import inet.visualizer.integrated.IntegratedMultiCanvasVisualizer;
 
 
 network QosThroughput
@@ -32,6 +33,7 @@ network QosThroughput
         configurator: IPv4NetworkConfigurator {
             @display("p=61,164");
         }
+        visualizer: IntegratedMultiCanvasVisualizer;
         ap: AccessPoint {
             parameters:
                 @display("p=200,200;r=,,#707070");
